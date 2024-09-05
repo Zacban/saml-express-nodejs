@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+
+// Get the port number from environment variables or command-line arguments, with a default of 3000
+const port = process.env.PORT || process.argv[2] || 3000;
 
 // Route to handle SAML Assertion consumption
 app.get("/saml-consumer", (req, res) => {
