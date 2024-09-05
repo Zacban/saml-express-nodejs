@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:AuthnRequest
+	xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+	AssertionConsumerServiceURL="http://localhost:3000/saml-consumer"
+	Destination="https://dev-47251218.okta.com/app/dev-47251218_samlappproject1_1/exkjeoiv75NqiObbM5d7/sso/saml"
+	ID="sample-id123456"
+	IssueInstant="2024-09-4T08:41:20.295Z"
+	ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+	Version="2.0">
+	<saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+		http://localhost:3000/saml-app-project1
+	</saml2:Issuer>
+</saml2p:AuthnRequest>
