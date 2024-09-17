@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<samlp:LogoutRequest 
-    Destination="{IDP-LOGOUT-URL}" 
-    ID="{UNIQUE-GENERATED-ID}" 
-    IssueInstant="2021-10-17T22:15:30.099Z" 
-    NotOnOrAfter="2021-10-18T22:01:30.099Z" 
-    Reason="SP Logout" 
-    Version="2.0" 
-    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" 
-    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
-  <saml:Issuer>{SP-ENTITY-ID}</saml:Issuer>
-  <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">{ASSERTION-NAME-ID}</saml:NameID>
-  <samlp:SessionIndex>{REQUEST-UNIQUE-GENERATED-ID}</samlp:SessionIndex>
+<samlp:LogoutRequest
+  Destination="https://dev-47251218.okta.com/app/dev-47251218_samlproject2_1/exkjfkvkzqDebyNs65d7/slo/saml"
+  ID="saml-project2-logout-request"
+  IssueInstant="2024-09-13T10:15:30.099Z"
+  NotOnOrAfter="2024-09-13T16:15:30.099Z"
+  Reason="SP Logout"
+  Version="2.0"
+  xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+  xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+  <saml:Issuer>http://localhost:4000/saml-app-project2</saml:Issuer>
+  <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">Zacban</saml:NameID>
+  <samlp:SessionIndex>sample-project2-id654321</samlp:SessionIndex>
 </samlp:LogoutRequest>

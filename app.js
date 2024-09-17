@@ -45,6 +45,18 @@ app.get("/saml-logout", (req, res) => {
     `);
 });
 
+app.post("/saml-logout", (req, res) => {
+  res.send(`
+          <!doctype html>
+          <html>
+              <title>SAML Logout Handler</title>
+              <body>
+                  <h2>Successfully consumed the Logout Response</h2>
+              </body>
+          </html>
+      `);
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
